@@ -1,9 +1,31 @@
 # Twitter-Analysis
+The dataset analyzed is a Twitter sentiment dataset containing columns like Entity, Sentiment, and Tweet content, aiming to classify tweets based on sentiment (e.g., Positive, Negative, Neutral).
 
-Summary:- 
+Initial data exploration included inspecting shape, basic statistics, and missing values.
 
-This project involves analyzing a Twitter dataset using Python libraries such as Pandas, NumPy, Matplotlib, and Seaborn. It includes data preprocessing, visualization, and possibly sentiment analysis or other text-based insights.
+The dataset includes multiple unique entities and sentiments, with a pie chart used for entity distribution and bar chart for sentiment distribution.
 
-Detailed Description:
+Missing values in Tweet content were handled using forward fill to retain data integrity.
 
-Objective: The project aims to analyze a dataset named twitter_training.csv, which is loaded using Pandas. Libraries Used: Pandas (for data handling), NumPy (for numerical operations), Matplotlib & Seaborn (for visualization). Number of Code Cells: 53 Number of Markdown Cells: 0 (it may lack explanatory text or documentation inside the notebook).
+Exploratory analysis included visualizations such as pie charts (for Entity), bar charts (for Sentiment), and a boxplot (for Entity frequency).
+
+Label encoding was used to convert categorical values of Entity and Sentiment into numerical form for machine learning model compatibility.
+
+Feature selection was done by dropping Tweet content, focusing only on Entity for model input and Sentiment as target.
+
+Data was split into training and testing sets using an 80/20 split.
+
+Two models were trained: Random Forest Classifier and Logistic Regression. Both were evaluated for training and test accuracy.
+
+Confusion matrix and heatmap visualizations were used to evaluate model performance, indicating classification accuracy and error distribution.
+
+Accuracy score and predicted probabilities from the model were also computed to assess effectiveness and confidence levels. 
+
+
+
+
+
+
+
+
+
